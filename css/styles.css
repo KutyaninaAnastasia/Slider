@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+:root {
+    --bg-color: #131313;
+    --headings-color: #E3B873;
+    --not-active-headings-color: #FFFFFF4d;
+    --text-color: #FFFFFF;
+    
+    --headings-font: "Yeseva One", sans-serif;
+    --text-font: "Nunito Sans", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.main {
+    margin-top: 107px;
+    margin-bottom: 123.72px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1171px;
+    gap: 50px;
+}
+
+.main__left-side{
+    padding-top: 68px;
+}
+
+.description__title{
+    font-family: var(--headings-font);
+    color: var(--headings-color);
+    font-size: 27px;
+    line-height: 138.6%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+
+.description__title::after {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 1px;
+    background-color: var(--headings-color);
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -17px;
+}
+
+.description__text{
+    font-family: var(--text-font);
+    font-size: 14px;
+    color:var(--text-color);
+    line-height: 191%;
+    padding-top: 34px;
+    padding-bottom: 42px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 34px;
+}
+
+.info__title{
+    font-family: var(--headings-font);
+    color: var(--headings-color);
+    font-size: 18px;
+    line-height: 138%;
+}
+
+.info__text{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 13px;
+    line-height: 163%;
+}
+
+.slider-buttons{
+    display: flex;
+    margin-top: 79px;
+    gap: 29.5px;
+}
+
+.slider-buttons__arrow{
+    cursor: pointer;
+}
+
+.slider-buttons__dots{
+    display: flex;
+    gap: 17.5px;
+}
+
+.slider-buttons__dot{
+    background-color: var(--not-active-headings-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot{
+    background-color: var(--text-color)
+}
+
+.slider-nav{
+    display: flex;
+    gap: 60.5px;
+    color: var(--not-active-headings-color);
+    font-family: var(--headings-font);
+    font-size: 14px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.slider-nav__item{
+    transition: 1s;
+    padding-bottom: 6.68px;
+}
+
+.slider-nav__item:hover,
+.active-nav-item{
+    color: var(--headings-color);
+    border-bottom: 1px solid var(--headings-color);
+}
+
